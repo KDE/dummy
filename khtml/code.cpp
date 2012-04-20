@@ -1,1 +1,3 @@
-int codecodecodecode();
+int codecodecodecode() {
+    return 0;
+}
