@@ -4,6 +4,6 @@ using namespace std;
 
 int main(void)
 {
-  cout<<"***Cough***, sorry all xD. Hope this works -_-";
+  cout<<"***Cough***, sorry all xD. This should work.";
   return 0;
 }
