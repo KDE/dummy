@@ -1,3 +1,4 @@
+/*
 Copyright <year>  <name of author> <e-mail>
 
 This program is free software; you can redistribute it and/or
@@ -13,3 +14,4 @@ GNU General Public License for more details.
 59 Temple Place
 
 omg
+*/
