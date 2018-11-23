@@ -1,0 +1,632 @@
+$TTL 1800
+@       IN  SOA a.ns.bytemark.co.uk. sysadmin.kde.org. (
+                    2018112101 10800 3600 2419200 86400 )
+                    IN  NS      a.ns.bytemark.co.uk.
+                    IN  NS      b.ns.bytemark.co.uk.
+                    IN  NS      c.ns.bytemark.co.uk.
+                    IN  MX 10   letterbox.kde.org.
+                    IN  TXT     "v=spf1 mx ip4:46.43.1.242 ip6:2001:41c9:1:41e::242 ip4:208.118.235.41 ip6:2001:4830:134:8::100 ?all"
+                    IN  TXT     "google-site-verification=tzNwQZyrp8RlOlIzlAPwBkBzDggU0cb65lXEvosYjmw"
+                    IN  A       91.189.93.5
+localhost           IN  A       127.0.0.1
+_xmpp-client._tcp   IN  SRV     5 0 5222 spring.kde.org.
+_xmpp-server._tcp   IN  SRV     5 0 5269 spring.kde.org.
+_jabber._tcp        IN  SRV     5 0 5269 spring.kde.org.
+
+; Validation Keys
+_token._dnswl       IN  TXT     "bqeo9iwyo2atbqisqh2r38pj4j736rmg"
+
+; DomainKeys
+default._domainkey  IN   TXT    "v=DKIM1; g=*; k=rsa; t=y; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+u9rA8lL8SEyi86VbJtM/avtqlkuuZAGl/4R0qr5SR30+K2kgB5NRYJrUVwJAIQQ0u66kSEX7cNDEThQaUnzgpKNNwpl0JjMbdhG/BEIdcXQ96FCA3vjOgp5WoWcauEj44G+lbWRizeMOZWhfJ5wG6muFSHQ2AgnjEBcxTidjLwIDAQAB"
+transact._domainkey IN   TXT    "v=DKIM1; k=rsa; s=email; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQD5KB/7OYdZVM7ZLsfjsycqE13NCSpFCXcKJcT2cdxHXi+RaBeS/GohVCQ6dINB7O8wJAYGA4avr/n70RF8TMGBQ1GrtoEPtCn6x7aGZr0glLZIQz58mT/rNecbQj19S4iuJR8IC3zpj6OIcLrAY7AqK5M9ax8Sb8pEMHdSVCNv2wIDAQAB"
+lists._domainkey    IN   TXT    "v=DKIM1; h=sha256; k=rsa; s=email; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5zpgWWyTFXq4jGmggkGvohUCqPqzEceEH/AkYRSGHMiFSkE3l59eCFnwoHynT/i5u8tmvcMfCM/Igb4Y11ls1z+SE7ZL9KmiCTgYxxVWXmKJnSqiYKND6UHxushOsBK2q8TDUbgCiaEWeyNVbWqHAYzG4Vplyp98CwkjlI7l0HMLqdw4XfMISGG5FezKWKwn7xIqh0RILyzI3v9jSdouKEMra6WW55HJDeyC8xNWnx2SeRUh7OLXQmf3mPS/ARjXdeNUxyTF0EBDAApcIEBWEKNuluaJ3zAgg5R1fAt6f8WfKCiBljbUl5CBAHLYb4QM6wscvXCwHhvzq08o1qdlwwIDAQAB"
+users._domainkey    IN   TXT    "v=DKIM1; h=sha256; k=rsa; s=email; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAncAdJkHAX1cIIhK0C7M1nyMqWhOwKv480Z8C57kwALAnShd3pvY+8v0UykQCIodwBVlihHX7PXq7V8kWvF436aieGHn/CZOs1Y+PM+E7n/buaJbjJqnIxG8Ygt+AN2ws7D+65OygTJVyqF4qpkzjXSQ9y46x2f/E54HydnIw8bUw0xAnLBVnaphux/WV/0vBYhGeT5hK71POeXbtTHsFxDAaaoXVSLpWdcMbd3zSwCo6Kn8IvT1tZWgcpmGwI/I0Ez7Uhzr7URbcYg/P69Wa/UaWj4ZixY8zEPliWF6cG/gL0uAShOc1B4KePyQHn7t9sdL9vZI+LVV7pPKs2c6K0QIDAQAB"
+
+; anonscm
+anonsvn 1h          IN  CNAME   svn.anonscm.local-kde.org.
+anongit 1h          IN  CNAME   git.anonscm.local-kde.org.
+anongit.neon 1h     IN  CNAME   neon.anonscm.local-kde.org.
+
+; CNAME's to externals, order by name.
+irc                 IN  CNAME   irc.freenode.net.
+irc.eu              IN  CNAME   irc.eu.freenode.net.
+irc.us              IN  CNAME   irc.us.freenode.net.
+kdevelop            IN  CNAME   www.kdevelop.org.
+packages.freebsd    IN  CNAME   FreeBSD.cs.nctu.edu.tw.
+
+; CNAME's to Incapsula for externally hosted services, order by name.
+store               IN  CNAME   otmc9ui.x.incapdns.net.
+
+; Random servers, not in our direct control, order by ip.
+cat                 IN  A       147.83.91.172
+                    IN  MX 0    null ; NULL MX - no mail
+
+mexico              IN  A       174.142.162.26
+                    IN  MX 0    null ; NULL MX - no mail
+
+cl                  IN  A       212.36.75.9
+                    IN  MX 0    null ; NULL MX - no mail
+
+kr                  IN  A       220.117.240.218
+                    IN  MX 0    null ; NULL MX - no mail
+korea               IN  A       220.117.240.218
+                    IN  MX 0    null ; NULL MX - no mail
+
+srcfiles.neon       IN  A       163.172.140.86
+                    IN  MX 0    null ; NULL MX - no mail
+
+; DigitalOcean Droplets
+; Ordered by droplet age
+
+; Elder - AnonSVN, AnonGit, Neon mirror (New York City - 1)
+elder               IN  A       159.203.184.29
+                    IN  AAAA    2604:a880:400:d0::666:c001
+packaging.neon      IN  CNAME   elder
+quickgit            IN  CNAME   elder
+cgit                IN  CNAME   xxnhius.x.incapdns.net.
+websvn              IN  CNAME   ea3fd3u.x.incapdns.net.
+
+; FreeBSD Build Node #3 (Frankfurt)
+freebsd-node3.build IN  A       138.68.87.150
+                    IN  AAAA    2a03:b0c0:3:d0::9fb:b001
+
+; Darwini - Neon Repository Archive and Other APIs (Frankfurt)
+darwini             IN  A       46.101.210.149
+                    IN  AAAA    2a03:b0c0:3:d0::bd8:c001
+geoip               IN  CNAME   darwini
+contents.neon       IN  CNAME   darwini
+archive-api.neon    IN  CNAME   darwini
+origin.archive.neon IN  CNAME   darwini
+archive.neon        IN  CNAME   1613612302.rsc.cdn77.org.
+
+; Servers we directly manage.
+;  ----- Start with the machine name and
+;        make cnames for all the services. Please keep it tidy. ----
+
+; Aranea - CI Build Host
+aranea              IN  A       195.201.167.114
+                    IN  AAAA    2a01:4f8:13a:f8d::2
+                    IN  MX 10   letterbox.kde.org.
+
+artonis             IN  A       195.201.167.115
+                    IN  AAAA    2a01:4f8:13a:f8c::2
+                    IN  MX 10   letterbox.kde.org.
+
+; Drax - Neon machine
+drax                IN  A       46.101.118.115
+                    IN  AAAA    2a03:b0c0:3:d0::4536:7001
+build.neon          IN  CNAME   drax
+images.neon         IN  CNAME   drax
+metadata.neon       IN  CNAME   drax
+download.kde.internal.neon  IN  CNAME   drax
+
+; Mason
+mason               IN  A       31.216.41.69
+projects            IN  CNAME   mason
+commits             IN  CNAME   mason
+apps                IN  CNAME   mason
+
+; Orbi
+orbi                IN  A       46.43.15.41
+                    IN  AAAA    2001:41c9:1:424::41
+                    IN  MX 10   letterbox.kde.org.
+identity            IN  CNAME   orbi
+
+ns1                 IN  A       46.43.15.41
+                    IN  AAAA    2001:41c9:1:424::41
+
+; Letterbox
+letterbox           IN  A       46.43.1.242
+                    IN  AAAA    2001:41c9:1:41e::242
+mail                IN  CNAME   letterbox.kde.org.
+lists               IN  CNAME   letterbox.kde.org.
+
+
+; Zivo
+zivo                IN  A       88.99.72.230
+api                 IN  CNAME   vs9h8.w.incapsula.net.
+ebn                 IN  CNAME   zivo
+
+; shrek and images.
+shrek               IN  A       195.135.221.68
+                    IN  AAAA    2001:67c:2178:7::68
+depot               IN  A       195.135.221.69
+                    IN  AAAA    2001:67c:2178:7::69
+waypoint            IN  A       195.135.221.71
+                    IN  AAAA    2001:67c:2178:7::71
+
+
+; bluemchen
+ns2                 IN  A       208.118.235.41
+bluemchen           IN  A       208.118.235.41
+                    IN  AAAA    2001:4830:134:8::100
+devel-home          IN  CNAME   bluemchen.kde.org.
+ktown               IN  CNAME   bluemchen.kde.org.
+developer           IN  CNAME   bluemchen.kde.org.
+
+; pennycan
+corkblock   1h      IN  A       144.76.35.153
+                    IN  AAAA    2a01:4f8:191:3193:cb:e1b0:314f:aded
+notes               IN  CNAME   corkblock
+ballot              IN  A       139.59.139.194
+
+; cano
+cano                IN  A       91.189.93.4
+                    IN  MX 10   letterbox.kde.org.
+olios               IN  A       91.189.93.5
+20years             IN  CNAME   olios
+akademy2006         IN  CNAME   olios
+akademy2007         IN  CNAME   olios
+akademy2008         IN  CNAME   olios
+akademy2009         IN  CNAME   olios
+akademy2010         IN  CNAME   olios
+akademy2012         IN  CNAME   olios
+accessibility       IN  CNAME   olios
+autoconfig          IN  CNAME   olios
+vvave               IN  CNAME   olios
+books               IN  CNAME   olios
+buzz                IN  CNAME   olios
+choqok              IN  CNAME   olios
+collect             IN  CNAME   olios
+conference2004      IN  CNAME   olios
+www.conference2004  IN  CNAME   olios
+conference2005      IN  CNAME   olios
+www.conference2005  IN  CNAME   olios
+conference2006      IN  CNAME   olios
+www.conference2006  IN  CNAME   olios
+conference2007      IN  CNAME   olios
+www.conference2007  IN  CNAME   olios
+conference2008      IN  CNAME   olios
+www.conference2008  IN  CNAME   olios
+conference2009      IN  CNAME   olios
+www.conference2009  IN  CNAME   olios
+czechia             IN  CNAME   olios
+de                  IN  CNAME   olios
+docs                IN  CNAME   olios
+dolphin             IN  CNAME   olios
+edu                 IN  CNAME   olios
+es                  IN  CNAME   olios
+www.es              IN  CNAME   olios
+ev                  IN  CNAME   olios
+evolve              IN  CNAME   olios
+gwenview            IN  CNAME   olios
+hig                 IN  CNAME   olios
+kdeev               IN  CNAME   olios
+kde-ev              IN  CNAME   olios
+kontact             IN  CNAME   olios
+extragear           IN  CNAME   olios
+fr                  IN  CNAME   olios
+www.fr              IN  CNAME   olios
+freebsd             IN  CNAME   olios
+games               IN  CNAME   olios
+il                  IN  CNAME   olios
+www.il              IN  CNAME   olios
+jp                  IN  CNAME   olios
+juk                 IN  CNAME   olios
+kate                IN  CNAME   olios
+kaffeine            IN  CNAME   olios
+kdepim              IN  CNAME   olios
+kdesrc-build        IN  CNAME   olios
+kdesvn-build        IN  CNAME   olios
+kmail               IN  CNAME   olios
+kmobiletools        IN  CNAME   olios
+kmplayer            IN  CNAME   olios
+konqueror           IN  CNAME   olios
+konsole             IN  CNAME   olios
+konversation        IN  CNAME   olios
+kopete              IN  CNAME   olios
+www.kopete          IN  CNAME   olios
+korganizer          IN  CNAME   olios
+kpdf                IN  CNAME   olios
+kst                 IN  CNAME   olios
+kst-plot            IN  CNAME   olios
+kube                IN  CNAME   olios
+lakademy            IN  CNAME   olios
+lakademy-staging    IN  CNAME   olios
+lokalize            IN  CNAME   olios
+manifesto           IN  CNAME   olios
+marble              IN  CNAME   olios
+www.marble          IN  CNAME   olios
+minuet              IN  CNAME   olios
+multimedia          IN  CNAME   olios
+neon                IN  CNAME   olios
+releases.neon       IN  CNAME   olios
+networkcheck        IN  CNAME   olios
+okular              IN  CNAME   olios
+necessitas          IN  CNAME   olios
+pe                  IN  CNAME   olios
+peruse              IN  CNAME   olios
+phonon              IN  CNAME   olios
+pim                 IN  CNAME   olios
+planet              IN  CNAME   olios
+plasma              IN  CNAME   olios
+promo               IN  CNAME   olios
+rekonq              IN  CNAME   olios
+ro                  IN  CNAME   olios
+www.ro              IN  CNAME   olios
+solaris             IN  CNAME   olios
+www.solaris         IN  CNAME   olios
+solid               IN  CNAME   olios
+timeline            IN  CNAME   olios
+themes              IN  CNAME   olios
+umbrello            IN  CNAME   olios
+utils               IN  CNAME   olios
+usability           IN  CNAME   olios
+vdesign             IN  CNAME   olios
+wiki                IN  CNAME   olios
+windows             IN  CNAME   olios
+www.windows         IN  CNAME   olios
+women               IN  CNAME   olios
+yakuake             IN  CNAME   olios
+www                 IN  CNAME   olios
+www-backstage       IN  CNAME   olios
+zanshin             IN  CNAME   olios
+
+; fiesta
+fiesta              IN  A       89.248.108.130
+                    IN  MX 10   letterbox.kde.org.
+; anepsion
+anepsion            IN  A       46.4.53.117
+                    IN  AAAA    2a01:4f8:140:1285::2
+                    IN  MX 10   letterbox.kde.org.
+charlotte           IN  A       46.4.53.123
+                    IN  AAAA    2a01:4f8:140:1285::3
+                    IN  MX 10   letterbox.kde.org.
+build               IN  CNAME   charlotte
+build-artifacts     IN  CNAME   charlotte
+binary-factory      IN  CNAME   charlotte
+eresida             IN  A       46.4.53.124
+                    IN  AAAA    2a01:4f8:140:1285::4
+invent              IN  CNAME   eresida.kde.org.
+
+; pirate
+pirate              IN  A       144.76.243.171
+                    IN  MX 10   letterbox.kde.org.
+                    IN  AAAA    2a01:4f8:200:93fb::2
+
+racnoss             IN  A       144.76.243.172
+                    IN  AAAA    2a01:4f8:200:93fb::3
+                    IN  MX 10   letterbox.kde.org.
+upload              IN  CNAME   racnoss
+rsync               IN  CNAME   racnoss
+master              IN  CNAME   racnoss
+master-eu           IN  CNAME   racnoss
+master-us           IN  CNAME   racnoss
+rsync.files         IN  CNAME   racnoss
+download            IN  CNAME   racnoss
+files               IN  CNAME   racnoss
+newstuff            IN  CNAME   racnoss
+distribute          IN  CNAME   racnoss
+origin.cdn          IN  CNAME   racnoss
+origin.files        IN  CNAME   racnoss
+origin.download     IN  CNAME   racnoss
+origin.distribute   IN  CNAME   racnoss
+maps                IN  CNAME   e798u.x.incapdns.net.
+cdn                 IN  CNAME   1088045785.rsc.cdn77.org.
+cdn.files           IN  CNAME   1410965305.rsc.cdn77.org.
+cdn.download        IN  CNAME   1009236516.rsc.cdn77.org.
+
+mimi                IN  A       144.76.243.174
+                    IN  AAAA    2a01:4f8:200:93fb::4
+reports             IN  CNAME   mimi
+conf                IN  CNAME   mimi
+commenting          IN  CNAME   mimi
+reimbursements      IN  CNAME   mimi
+reviewboard         IN  CNAME   mimi
+svn.reviewboard     IN  CNAME   mimi
+git.reviewboard     IN  CNAME   mimi
+volunteers.akademy  IN  CNAME   mimi
+atelier             IN  CNAME   mimi
+vvave-stream        IN  CNAME   mimi
+
+nellie              IN  A       144.76.220.218
+                    IN  AAAA    2a01:4f8:200:93fb::5
+                    IN  MX 10   letterbox.kde.org.
+
+; recluse
+recluse             IN  A       136.243.177.136
+                    IN  MX 10   letterbox.kde.org.
+                    IN  AAAA    2a01:4f8:171:2687::2
+scm                 IN  A       138.201.41.178
+                    IN  AAAA    2a01:4f8:171:2687::3
+git                 IN  CNAME   scm.kde.org.
+staging.git         IN  CNAME   scm.kde.org.
+svn                 IN  CNAME   scm.kde.org.
+code                IN  A       138.201.41.179
+                    IN  AAAA    2a01:4f8:171:2687::4
+                    IN  MX      10 letterbox.kde.org.
+git.neon            IN  CNAME   code.kde.org.
+phabricator         IN  CNAME   code.kde.org.
+go                  IN  CNAME   code.kde.org.
+
+; gohma
+gohma               IN  A       144.76.218.102
+                    IN  AAAA    2a01:4f8:200:9165::2
+                    IN  MX 10   letterbox.kde.org.
+spring              IN  A       144.76.218.124
+                    IN  AAAA    2a01:4f8:200:9165::3
+bnc                 IN  CNAME   spring.kde.org.
+share               IN  CNAME   spring.kde.org.
+office              IN  CNAME   spring.kde.org.
+irc-attachments     IN  CNAME   spring.kde.org.
+bugs                IN  A       144.76.227.196
+                    IN  AAAA    2a01:4f8:200:9165::4
+                    IN  MX 10   bugs.kde.org.
+bugsfiles           IN  CNAME   bugs.kde.org.
+bugs-admin          IN  CNAME   bugs.kde.org.
+bugstest            IN  CNAME   bugs.kde.org.
+bugstest-files      IN  CNAME   bugs.kde.org.
+silk                IN  A       144.76.227.197
+                    IN  AAAA    2a01:4f8:200:9165::5
+                    IN  MX 10   letterbox.kde.org.
+ar                  IN  CNAME   silk.kde.org.
+news                IN  CNAME   silk.kde.org.
+amarok              IN  CNAME   silk.kde.org.
+simon               IN  CNAME   silk.kde.org.
+akademy             IN  CNAME   silk.kde.org.
+akademy2013         IN  CNAME   silk.kde.org.
+forums              IN  CNAME   silk.kde.org.
+br                  IN  CNAME   silk.kde.org.
+sysadmin            IN  CNAME   silk.kde.org.
+nepomuk             IN  CNAME   silk.kde.org.
+research            IN  CNAME   silk.kde.org.
+akregator           IN  CNAME   silk.kde.org.
+contour             IN  CNAME   silk.kde.org.
+brainstorm.forum    IN  CNAME   silk.kde.org.
+in                  IN  CNAME   silk.kde.org.
+wiki.br             IN  CNAME   silk.kde.org.
+wikisandbox         IN  CNAME   silk.kde.org.
+people              IN  CNAME   silk.kde.org.
+labplot             IN  CNAME   silk.kde.org.
+mac                 IN  CNAME   silk.kde.org.
+stats               IN  CNAME   silk.kde.org.
+paste               IN  CNAME   silk.kde.org.
+pastebin            IN  CNAME   silk.kde.org.
+*.paste             IN  CNAME   silk.kde.org.
+*.pastebin          IN  CNAME   silk.kde.org.
+relate              IN  CNAME   silk.kde.org.
+jointhegame         IN  CNAME   silk.kde.org.
+rkward              IN  CNAME   silk.kde.org.
+blog.neon           IN  CNAME   silk.kde.org.
+events              IN  CNAME   silk.kde.org.
+dot                 IN  CNAME   t6jrh.x.incapdns.net.
+blogs               IN  CNAME   ufdch.x.incapdns.net.
+forum               IN  CNAME   ol575.x.incapdns.net.
+community           IN  CNAME   3ryhw.x.incapdns.net.
+userbase            IN  CNAME   ro7dr.x.incapdns.net.
+techbase            IN  CNAME   rng5d.x.incapdns.net.
+
+; ange
+ange                IN  A       144.76.172.7
+                    IN  AAAA    2a01:4f8:200:5006::2
+                    IN  MX 10   letterbox.kde.org.
+lxr                 IN  A       144.76.180.106
+                    IN  AAAA    2a01:4f8:200:5006::3
+                    IN  MX 10   letterbox.kde.org.
+sources             IN  CNAME   lxr.kde.org.
+joy                 IN  A       144.76.180.189
+                    IN  AAAA    2a01:4f8:200:5006::4
+                    IN  MX 10   letterbox.kde.org.
+
+; stumptown
+stumptown           IN  A       140.211.9.13
+                    IN  AAAA    2605:bc80:3010:104:0:3::1
+                    IN  MX 0    null ; NULL MX - no mail
+season              IN  CNAME   stumptown.kde.org.
+survey              IN  CNAME   stumptown.kde.org.
+commit-digest       IN  CNAME   stumptown.kde.org.
+
+; dalca
+dalca               IN  A       192.75.96.253
+                    IN  AAAA    2001:410:a000:50::30
+                    IN  MX 10   letterbox.kde.org.
+
+; Overwatch
+overwatch           IN  A       217.13.79.76
+                    IN  MX 10   letterbox.kde.org.
+status              IN  CNAME   overwatch.kde.org.
+
+; Temporary Overwatch dev instance
+overwatch-test      IN  A       104.248.26.119
+
+; Library
+library             IN  A       217.13.79.75
+                    IN  MX 10   letterbox.kde.org.
+docs-staging        IN  CNAME   library.kde.org.
+
+; Rosetta
+rosetta             IN  A       217.13.79.74
+                    IN  MX 10   letterbox.kde.org.
+
+l10n                IN  CNAME   rosetta.kde.org.
+www.l10n            IN  CNAME   l10n.kde.org.
+logs.l10n           IN  CNAME   l10n.kde.org.
+
+be.l10n             IN  CNAME   l10n.kde.org.
+www.be.l10n         IN  CNAME   l10n.kde.org.
+
+bn.l10n             IN  CNAME   l10n.kde.org.
+www.bn.l10n         IN  CNAME   l10n.kde.org.
+
+ca.l10n             IN  CNAME   l10n.kde.org.
+www.ca.l10n         IN  CNAME   l10n.kde.org.
+
+de.l10n             IN  CNAME   l10n.kde.org.
+www.de.l10n         IN  CNAME   l10n.kde.org.
+
+el.l10n             IN  CNAME   l10n.kde.org.
+www.el.l10n         IN  CNAME   l10n.kde.org.
+
+en.l10n             IN  CNAME   l10n.kde.org.
+www.en.l10n         IN  CNAME   l10n.kde.org.
+
+eo.l10n             IN  CNAME   l10n.kde.org.
+www.eo.l10n         IN  CNAME   l10n.kde.org.
+
+es.l10n             IN  CNAME   l10n.kde.org.
+www.es.l10n         IN  CNAME   l10n.kde.org.
+
+fr.l10n             IN  CNAME   l10n.kde.org.
+www.fr.l10n         IN  CNAME   l10n.kde.org.
+
+ga.l10n             IN  CNAME   l10n.kde.org.
+www.ga.l10n         IN  CNAME   l10n.kde.org.
+
+hsb.l10n            IN  CNAME   l10n.kde.org.
+www.hsb.l10n        IN  CNAME   l10n.kde.org.
+
+hu.l10n             IN  CNAME   l10n.kde.org.
+www.hu.l10n         IN  CNAME   l10n.kde.org.
+
+hr.l10n             IN  CNAME   l10n.kde.org.
+www.hr.l10n         IN  CNAME   l10n.kde.org.
+
+in.l10n             IN  CNAME   l10n.kde.org.
+www.in.l10n         IN  CNAME   l10n.kde.org.
+
+is.l10n             IN  CNAME   l10n.kde.org.
+www.is.l10n         IN  CNAME   l10n.kde.org.
+
+it.l10n             IN  CNAME   l10n.kde.org.
+www.it.l10n         IN  CNAME   l10n.kde.org.
+
+ka.l10n             IN  CNAME   l10n.kde.org.
+www.ka.l10n         IN  CNAME   l10n.kde.org.
+
+kg.l10n             IN  CNAME   l10n.kde.org.
+www.kg.l10n         IN  CNAME   l10n.kde.org.
+
+kn.l10n             IN  CNAME   l10n.kde.org.
+www.kn.l10n         IN  CNAME   l10n.kde.org.
+
+ku.l10n             IN  CNAME   l10n.kde.org.
+www.ku.l10n         IN  CNAME   l10n.kde.org.
+
+lo.l10n             IN  CNAME   l10n.kde.org.
+www.lo.l10n         IN  CNAME   l10n.kde.org.
+
+lb.l10n             IN  CNAME   l10n.kde.org.
+www.lb.l10n         IN  CNAME   l10n.kde.org.
+
+lt.l10n             IN  CNAME   l10n.kde.org.
+www.lt.l10n         IN  CNAME   l10n.kde.org.
+
+ms.l10n             IN  CNAME   l10n.kde.org.
+www.ms.l10n         IN  CNAME   l10n.kde.org.
+
+nds.l10n            IN  CNAME   l10n.kde.org.
+www.nds.l10n        IN  CNAME   l10n.kde.org.
+
+ne.l10n             IN  CNAME   l10n.kde.org.
+www.ne.l10n         IN  CNAME   l10n.kde.org.
+
+no-NY.l10n          IN  CNAME   l10n.kde.org.
+www.no-NY.l10n      IN  CNAME   l10n.kde.org.
+
+pa.l10n             IN  CNAME   l10n.kde.org.
+www.pa.l10n         IN  CNAME   l10n.kde.org.
+
+pt-BR.l10n          IN  CNAME   l10n.kde.org.
+www.pt-BR.l10n      IN  CNAME   l10n.kde.org.
+
+ro.l10n             IN  CNAME   l10n.kde.org.
+www.ro.l10n         IN  CNAME   l10n.kde.org.
+
+ru.l10n             IN  CNAME   l10n.kde.org.
+www.ru.l10n         IN  CNAME   l10n.kde.org.
+
+sl.l10n             IN  CNAME   l10n.kde.org.
+www.sl.l10n         IN  CNAME   l10n.kde.org.
+
+sv.l10n             IN  CNAME   l10n.kde.org.
+www.sv.l10n         IN  CNAME   l10n.kde.org.
+
+sr.l10n             IN  CNAME   l10n.kde.org.
+www.sr.l10n         IN  CNAME   l10n.kde.org.
+
+ta.l10n             IN  CNAME   l10n.kde.org.
+www.ta.l10n         IN  CNAME   l10n.kde.org.
+
+tl.l10n             IN  CNAME   l10n.kde.org.
+www.tl.l10n         IN  CNAME   l10n.kde.org.
+
+tr.l10n             IN  CNAME   l10n.kde.org.
+www.tr.l10n         IN  CNAME   l10n.kde.org.
+
+ur.l10n             IN  CNAME   l10n.kde.org.
+www.ur.l10n         IN  CNAME   l10n.kde.org.
+
+vi.l10n             IN  CNAME   l10n.kde.org.
+www.vi.l10n         IN  CNAME   l10n.kde.org.
+
+zh-TWBig5.l10n      IN  CNAME   l10n.kde.org.
+www.zh-TWBig5.l10n  IN  CNAME   l10n.kde.org.
+
+be.i18n             IN  CNAME   l10n.kde.org.
+bn.i18n             IN  CNAME   l10n.kde.org.
+ca.i18n             IN  CNAME   l10n.kde.org.
+de.i18n             IN  CNAME   l10n.kde.org.
+el.i18n             IN  CNAME   l10n.kde.org.
+en.i18n             IN  CNAME   l10n.kde.org.
+eo.i18n             IN  CNAME   l10n.kde.org.
+es.i18n             IN  CNAME   l10n.kde.org.
+fr.i18n             IN  CNAME   l10n.kde.org.
+lb.i18n             IN  CNAME   l10n.kde.org.
+ga.i18n             IN  CNAME   l10n.kde.org.
+hsb.i18n            IN  CNAME   l10n.kde.org.
+hu.i18n             IN  CNAME   l10n.kde.org.
+i18n                IN  CNAME   l10n.kde.org.
+it.i18n             IN  CNAME   l10n.kde.org.
+kg.i18n             IN  CNAME   l10n.kde.org.
+ku.i18n             IN  CNAME   l10n.kde.org.
+list.i18n           IN  CNAME   l10n.kde.org.
+lists.i18n          IN  CNAME   l10n.kde.org.
+lo.i18n             IN  CNAME   l10n.kde.org.
+lt.i18n             IN  CNAME   l10n.kde.org.
+ms.i18n             IN  CNAME   l10n.kde.org.
+nds.i18n            IN  CNAME   l10n.kde.org.
+no-NY.i18n          IN  CNAME   l10n.kde.org.
+pa.i18n             IN  CNAME   l10n.kde.org.
+pt-BR.i18n          IN  CNAME   l10n.kde.org.
+ro.i18n             IN  CNAME   l10n.kde.org.
+ru.i18n             IN  CNAME   l10n.kde.org.
+sl.i18n             IN  CNAME   l10n.kde.org.
+sv.i18n             IN  CNAME   l10n.kde.org.
+ta.i18n             IN  CNAME   l10n.kde.org.
+tl.i18n             IN  CNAME   l10n.kde.org.
+tr.i18n             IN  CNAME   l10n.kde.org.
+vi.i18n             IN  CNAME   l10n.kde.org.
+www.be.i18n         IN  CNAME   l10n.kde.org.
+www.bn.i18n         IN  CNAME   l10n.kde.org.
+www.ca.i18n         IN  CNAME   l10n.kde.org.
+www.de.i18n         IN  CNAME   l10n.kde.org.
+www.el.i18n         IN  CNAME   l10n.kde.org.
+www.en.i18n         IN  CNAME   l10n.kde.org.
+www.eo.i18n         IN  CNAME   l10n.kde.org.
+www.es.i18n         IN  CNAME   l10n.kde.org.
+www.fr.i18n         IN  CNAME   l10n.kde.org.
+www.lb.i18n         IN  CNAME   l10n.kde.org.
+www.ga.i18n         IN  CNAME   l10n.kde.org.
+www.hsb.i18n        IN  CNAME   l10n.kde.org.
+www.hu.i18n         IN  CNAME   l10n.kde.org.
+www.i18n            IN  CNAME   l10n.kde.org.
+www.it.i18n         IN  CNAME   l10n.kde.org.
+www.kg.i18n         IN  CNAME   l10n.kde.org.
+www.ku.i18n         IN  CNAME   l10n.kde.org.
+www.lo.i18n         IN  CNAME   l10n.kde.org.
+www.lt.i18n         IN  CNAME   l10n.kde.org.
+www.ms.i18n         IN  CNAME   l10n.kde.org.
+www.nds.i18n        IN  CNAME   l10n.kde.org.
+www.no-NY.i18n      IN  CNAME   l10n.kde.org.
+www.pa.i18n         IN  CNAME   l10n.kde.org.
+www.pt-BR.i18n      IN  CNAME   l10n.kde.org.
+www.ro.i18n         IN  CNAME   l10n.kde.org.
+www.ru.i18n         IN  CNAME   l10n.kde.org.
+www.sl.i18n         IN  CNAME   l10n.kde.org.
+www.sv.i18n         IN  CNAME   l10n.kde.org.
+www.ta.i18n         IN  CNAME   l10n.kde.org.
+www.tl.i18n         IN  CNAME   l10n.kde.org.
+www.tr.i18n         IN  CNAME   l10n.kde.org.
+www.vi.i18n         IN  CNAME   l10n.kde.org.
+www.zh-TWBig5.i18n  IN  CNAME   l10n.kde.org.
+zh-TWBig5.i18n      IN  CNAME   l10n.kde.org.
