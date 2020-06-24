@@ -36,11 +36,3 @@
     - includes gitlab-ci-applications.yaml
     - includes binary-factory-apk.yaml
 
-More testing please!
-Maybe Round 2?
-Maybe Round 3?
-Round 4?
-Timing test
-Timing test 2
-More bash testing
-Continued tests
