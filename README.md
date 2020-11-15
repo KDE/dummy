@@ -36,3 +36,5 @@
     - includes gitlab-ci-applications.yaml
     - includes binary-factory-apk.yaml
 
+- If you see a barricade tape that says "do not cross", you *can* walk over it,
+  but you're not supposed to.
