@@ -9,7 +9,7 @@ import wsgiref.simple_server
 import WebResources
 
 # Testing
-# Test 7
+# Test 8
 
 # Gather the command line arguments we need
 parser = argparse.ArgumentParser(description='Specialist redirector to handle commits.kde.org permanent links')
