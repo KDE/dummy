@@ -38,3 +38,5 @@
 
 - If you see a barricade tape that says "do not cross", you *can* walk over it,
   but you're not supposed to.
+
+- Prepare to test force pushes
