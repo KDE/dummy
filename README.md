@@ -40,3 +40,5 @@
   but you're not supposed to.
 
 - Prepare to test force pushes
+
+Hmm do libera notifications work?
