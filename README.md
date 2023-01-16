@@ -35,3 +35,6 @@
 - Have a gitlab-ci.yaml
     - includes gitlab-ci-applications.yaml
     - includes binary-factory-apk.yaml
+
+
+Testing web editor
